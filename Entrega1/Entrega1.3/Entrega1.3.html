@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf­8">
+    <title>Herencia</title>
+    <style type="text/css">
+      #caja header{ color: red;} <!-- Prioridad 0,1,0,1 -->
+      .cabecera h1{ color: pink;} <!-- Prioridad 0,0,1,1 -->
+  header h1{  <!-- Prioridad 0,0,0,2 -->
+     color:blue;
+  }
+  h1{ <!-- Prioridad 0,0,0,1 -->
+    color:grey;
+  }
+</style>
+  </head>
+  <body>
+    <div id="caja">
+      <header class="cabecera">
+        <h1>Cabecera: header</h1>
+      </header>
+    </div>
+    
+  </body>
+</html>
