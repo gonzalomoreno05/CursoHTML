@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CORE2016 P3</title>
+<h1 align="center">Buenos días, bienvenido a la calculadora de Gonzalo Moreno
+			Arévalo (gonzalo.moreno.arevalo@alumnos.upm.es)</h1>
+<link href="normal.css" rel="stylesheet" type="text/css"
+	media="(min-device-width:480px)">
+<link href="movil.css" rel="stylesheet" type="text/css"
+	media="(max-device-width:480px)">
+<script type="text/javascript"
+	src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script type="text/javascript" src="/Practica3/calculadora.js"></script>
+</head>
+
+<body>
+	<div class="navegador">
+		<div class="container">
+			<div class="cajitas">
+				<ul>
+					<li><a href="/Practica1/index.html">Índice</a></li>
+					<li><a href="/Practica1/asignaturas.html">Asignaturas</a></li>
+					<li><a href="/Practica2/propiedades.html">Propiedades</a></li>
+					<li class="active"><a href="/Practica3/calculadora.html">Calculadora</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<header align="center">
+		
+	</header>
+	<section id="main" align="center">
+
+
+		<strong>Número:</strong> <input type="text" id="pantalla">
+		<button id="igual">=</button>
+		<br>
+		<button id="suma">+</button>
+		<button id="resta">-</button>
+		<button id="multiplicacion">*</button>
+		<button id="division">/</button>
+		<button id="cuadrado">
+			x<sup>2</sup>
+		</button>
+		<button id="inverso">1/x</button>
+		<br>
+		<button id="raiz">&#8730;x</button>
+		<button id="pentera">|x|</button>
+		<button id="potencia2">
+			2<sup>x</sup>
+		</button>
+		<button id="factorial">x!</button>
+		<button id="limpiar">Limpiar</button>
+
+	</section>
+	<footer>
+		<p style="text-align: center;">Gonzalo Moreno Arévalo</p>
+
+		<p style="text-align: center;" id=”fecha”>
+			<script>document.write(new	Date());</script>
+		</p>
+	</footer>
+</body>
+</html>
