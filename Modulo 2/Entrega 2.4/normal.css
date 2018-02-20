@@ -1,0 +1,62 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html{
+  background: #EEEEEE;
+  font: "Courier";
+}
+
+h1{
+  color: #00008B;
+  font-family: Roboto, arial;
+  font-size: 36px;
+}
+
+.navegador{
+	padding: 15px;
+	background-color: #EEEEEE;
+
+}
+.cajitas li a {
+  color: #00008B;
+  border: 1px solid #00008B;
+  border-radius: 5px;
+  padding: 10px 15px;
+  text-decoration: none;
+  text-align: center;
+  margin: 7px;
+}
+.cajitas .active a,
+.cajitas li a:hover,
+.section .btn:hover {
+  background:linear-gradient(to top, rgba(50,116,45,1) 0%,rgba(239,239,210,1) 100%);
+  box-shadow:0 2px 4px rgba(0,0,0,.5); 
+  color:#fff;
+}
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	flex-direction: row;
+}
+td {
+  text-align: center;
+}
+
+table a{
+  color: blue;
+  text-decoration: none;
+  border-collapse:collapse;;
+}
+a {
+  color: blue;
+  display:block;
+	padding:1em;
+	margin-right:0.2em;
+	text-decoration:none;
+}
+
+footer{
+  text-align: center;
+  }
+  
