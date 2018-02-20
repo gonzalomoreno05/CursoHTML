@@ -1,0 +1,44 @@
+ <!DOCTYPE html><html>
+<head>
+  <title>Date</title>
+  <h1>Gonzalo Moreno Arévalo</h1>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <h1 id="h1"></h1>
+  <h2 id="h2">La fecha y la hora son:</h2>
+  <div id="fecha"></div>
+
+ <script type="text/javascript">
+  var fecha = new Date();
+  var msj;
+  
+  
+
+  if      (fecha.getHours() < 7)  { msj = "Buenas noches";}
+  else if (fecha.getHours() < 12) { msj = "Buenos días";}
+  else if (fecha.getHours() < 21) { msj = "Buenas tardes";}
+  else                                          { msj = "Buenas noches";}
+
+  document.getElementById("h1").innerHTML    = msj;
+  document.getElementById("fecha").innerHTML = fecha;
+
+</script>
+<div>
+  <script type="text/javascript">
+  var a = document.getElementById("h2").innerHTML;
+  var b = document.getElementById("h1").outerHTML;
+  var c = document.location.href;
+  var d = document.location;
+  var e1 = screen.width;
+  var e2 = screen.height;
+    document.write("<br>");
+    document.write("El contenido de innerHTML del elemento identificado por id='h2' es: " + a + "<br>");
+    document.write("El contenido de outerHTML del elemento identificado por id='h1' es: " + b + "<br>");
+    document.write("El contenido de de la propiedad global location.href es:  " + c + "<br>");
+    document.write("El contenido de de la propiedad global location es: " + d + "<br>");
+    document.write("El contenido de las propiedades globales screen.width y screen.heigth es: " + e1 + " y " + e2 + "<br>");
+  </script>
+</div>
+</body>
+</html>
