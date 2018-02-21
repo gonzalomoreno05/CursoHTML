@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Puzzle</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style type="text/css">
+		*{
+			user-select:none;
+			-webkit-touch-callout:none;
+			-webkit-tap-highlight-color:rgba(0,0,0,0);
+			-webkit-tap-highlight-color:transparent;
+
+			margin:0;
+			padding:0;
+		}
+		#sortable{
+			list-style-type:none;
+			margin-left: auto;
+			margin-right: auto; 
+		}
+		#sortable li{
+			float:left;
+			width: 33.3%;
+		}
+		#sortable li img{
+			vertical-align: bottom;
+			width: 100%;
+			height:auto;
+		}
+	</style>
+	<script src="js/jquery-2.2.3.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/jquery.ui.touch-punch.min.js"></script>
+	<!-- Bootstrap Javascript -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script>
+		$(function(){
+			$("#sortable").sortable();
+			$("#sortable").disableSelection();
+		});
+	</script>
+</head>
+<body>
+<div class="container">
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#miMenu">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">MOOC</a>			
+			</div>
+
+			<div class="collapse navbar-collapse" id="miMenu">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html">INICIO</a></li>
+					<li><a href="puzzle.html">PUZZLE</a></li>
+					<li><a href="calculadora.html">CALCULADORA</a></li>
+					<li><a href="#">Opción 4</a></li>
+					<li><a href="#">Opción 5</a></li>
+					
+				</ul>	
+			</div><!--#miMenu-->
+
+		</div>
+		
+	</nav><!--navbar-->
+	<ul id="sortable">
+		<li><img src="images/rafael_8.jpg" alt=""></li>
+		<li><img src="images/rafael_4.jpg" alt=""></li>
+		<li><img src="images/rafael_6.jpg" alt=""></li>
+		<li><img src="images/rafael_2.jpg" alt=""></li>
+		<li><img src="images/rafael_9.jpg" alt=""></li>
+		<li><img src="images/rafael_3.jpg" alt=""></li>
+		<li><img src="images/rafael_7.jpg" alt=""></li>
+		<li><img src="images/rafael_1.jpg" alt=""></li>
+		<li><img src="images/rafael_5.jpg" alt=""></li>
+	</ul>
+</div>
+<!--footer-->
+<div class="panel-footer">
+	<p>Antonio José Céspedes López</p>
+</div>	
+</body>
+</html>

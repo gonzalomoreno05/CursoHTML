@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculadora de Gonzalo Moreno Arévalo</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="css/normal.css" rel="stylesheet" type="text/css"
+	media="(min-device-width:480px)">
+    <link href="css/movil.css" rel="stylesheet" type="text/css"
+	media="(max-device-width:480px)">
+	<script Type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/calculadora.js"></script>
+	<script type="text/javascript">
+
+		
+
+	</script>
+</head>
+<body>
+<div class="container">
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#miMenu">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="Entrega.html">MOOC</a>			
+			</div>
+
+			<div class="collapse navbar-collapse" id="miMenu">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="Entrega.html">INICIO</a></li>
+					<li><a href="puzzle.html">PUZZLE</a></li>
+					<li><a href="#">CALCULADORA</a></li>
+					<li><a href="#">Opción 4</a></li>
+					<li><a href="#">Opción 5</a></li>
+					
+				</ul>	
+			</div><!--#miMenu-->
+
+		</div>
+		
+	</nav><!--navbar-->
+
+	<div id="contenedor" align="center">
+		<div id="cabecera">
+			<h2>Calculadora de Gonzalo Moreno Arévalo</h2>
+			<h3>jQuery</h3>
+		</div>
+
+		<div>
+			Número:
+			<input type="text" id="pant" size="30">
+
+		</div>
+
+		<div id="opunitarias">
+			<strong>Operaciones unitarias</strong><br>
+			<button id="cuadrado" title="Cálcula el cuadrado de x">
+			x<sup>2</sup>
+			</button>
+			<button id="inverso" title="Cálcula el inverso de x">
+			1/x		
+			</button>
+			<button id="raizc" title="Cálcula la raíz cuadrada de x">
+			&#8730;x		
+			</button>
+			<button id="parte" title="parte entera de x">
+			pe(x)
+			</button>
+		</div>
+		<div id="opbinarias">
+			<strong>Operaciones binarias</strong><br>
+			<button id="suma" title="Suma dos números">+</button>
+			<button id="resta" title="Resta dos números">-</button>
+			<button id="multip" title="Multiplica dos números">*</button>
+			<button id="divi" title="Divide dos números">/</button>
+			<button id="expon" title="Eleva un número a otro">x<sup>y</sup></button>
+
+		</div>
+		<div id="opnop">
+			<strong>Operaciones con n operandos</strong><br>
+			<button id="Sumatorio" title="Suma una serie de números separados por comas">&#931;(n)</button>
+			<button id="Producto" title="Multiplica una serie de números separados por comas">&#928;(n)</button>		
+		</div>
+		<div id="cal">
+			<button id="calcula" >Calcula</button>
+		</div>
+		
+	</div>
+	<!--footer-->
+	<div class="panel-footer">
+		<p>Gonzalo Moreno Arévalo</p>
+	</div>
+</div><!--.container-->
+	
+</body>
+</html>
